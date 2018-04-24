@@ -5,10 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio Page</title>
-
+    <link rel="icon" href="https://i.pinimg.com/originals/84/ca/6c/84ca6ca935b91f23d88a5ce53da778c4.jpg" type="image/png">
     <!--Style Sheet-->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-image: url(assets/images/darkness.png);
+        }
+
+       @media screen and (max-width: 1400px) {
+
+           h1 {
+            font-size: 95%;
+           }
+           .col-12 {
+               overflow: scroll;
+               height: 50%;
+           }
+
+        @media screen and (max-width: 1100px) {
+            .blog {
+                height: 200px;
+                width: 400px;
+            }
+        }  
+                                             }
+        
+        @media screen and (max-width: 900px) {
+            .blog {
+                height: 200px;
+                width: 300px;
+            }
+        }  
+
+        @media screen and (max-width: 700px) {
+            .blog {
+                height: 200px;
+                width: 300px;
+                float: none;
+            }
+        }                                              
+
+
+</style>
 
 </head>
 
@@ -67,6 +108,31 @@
 
 <!--Portfolio Section-->
 
+<section class="row">
+
+  <div class="col-12" style="background: white; position: absolute; top: 15%; left: 10%; right: 10%; width: 80%; height: 70%;">
+
+      <h2 style="color: teal; padding-top: 20px;"> Portfolio </h2>
+      <hr>
+
+      <div class="embed-responsive embed-responsive-16by9" style="float: left; overflow: scroll; width: 40%; height: 400xp;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Qv9lq7c338U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+      </div>
+
+      <a class="btn btn-primary" href="https://www.youtube.com/playlist?list=PLHHeE3YfVryazyVCiGUbbmyW3_u3dEJIE" target="_blank" role="button">Visit the Channel</a>
+
+      <div class="blog" style="float: right; height: 400xp; overflow: scroll;">
+                <a href="https://blog.nimbo-x.com/c%C3%B3mo-usar-el-m%C3%B3dulo-de-cargos-de-nimbo-x-2bde1bd27397" target="_blank"><img src="assets/images/cargos_post.png" alt="Cómo usar el Módulo de Cargos de Nimbo X" style="width: 500px; height: 300px;">
+                </a>
+      </div>
+
+      <a class="btn btn-primary" href="https://blog.nimbo-x.com/" target="_blank" role="button">Visit the Blog</a>
+
+  </div>
+    
+</section>
+
 
 <!--Footer Section-->
     
@@ -76,10 +142,6 @@
 
             <nav class="navbar navbar-light bg-light justify-content-between" style="position: fixed; bottom: 0%; right: 0%; left: 0%;">
                     <a class="navbar-brand">Copyright @</a>
-                    <form class="form-inline">
-                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
                   </nav>
         </div>
 

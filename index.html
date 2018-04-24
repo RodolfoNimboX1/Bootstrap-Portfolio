@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Me Page</title>
+    <link rel="icon" href="https://i.pinimg.com/originals/84/ca/6c/84ca6ca935b91f23d88a5ce53da778c4.jpg" type="image/png">
 
     <!--Style Sheet-->
 
@@ -14,7 +15,31 @@
             body {
                 background-image: url(assets/images/darkness.png);
             }
-        </style>
+
+           @media screen and (max-width: 1400px) {
+
+               h1 {
+                font-size: 99.5%;
+               }
+               .col-12 {
+                   overflow: scroll;
+                   height: 50%;
+               }
+                                                 }
+
+           @media screen and (max-width: 991px) {
+                .col-12 {
+                    height: 30%;
+                }
+                                                }
+ 
+            @media screen and (max-width: 770px) {
+                .image1 {
+                    display: none;
+                }
+                                                 }
+
+    </style>
 
 </head>
 
@@ -30,7 +55,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: white; position: fixed; top:0%; right: 0%; left: 0%;">
 
                 <!--Logo-->
-                    <a style="background: teal; color: white; margin-left: 50px;"> 
+                    <a style="background: teal; color: white; margin-left: 50px; display: block;"> 
                         <h1> Rodolfo Schaefer Resines </h1> 
                     </a>
 
@@ -73,10 +98,41 @@
 
     <!--Content Section-->
 
-    <section class="row" style="position: absolute; top: 15%; left: 10%; right: 10%; width: 80%; height: 70%;">
+    <section class="row">
 
-        <div class="col" style="background: white;">
-            ABOUT ME SECTION BRUH
+        <div class="col-12" style="background: white; position: absolute; top: 15%; left: 10%; right: 10%; width: 80%; height: 70%;">
+            
+            <h2 style="color: teal; padding-top: 20px;"> About Me </h2>
+            <hr>
+
+            <!--Picture-->
+
+            <div style="float: left;">
+                <img class="image1" src="assets/images/rodolfo copy.png" style="width: 200px;">
+                <img class="d-md-none" src="assets/images/rodolfo copy.png" style="width: 100px;">
+            </div>
+
+            <!--Description-->
+
+            <p style="color: #777777;">
+                Analytical, creative, multi-disciplinary, agile, focused. I graduated from a Bachelor´s in Marketing but ever since I entered the digital marketing area, 
+                I found that in order to deliver the best business solutions you need to be more than just a marketer. I consider myself a Growth Hacker. My goal as a 
+                growth hacker is to help e-commerce and start-ups to scale and grow their business. 
+                <br>
+                <br>
+                With the use of creative marketing, data analysis and process automation we can generate explosive results! 
+                <br>
+                Im currently the Customer Success Manager for Nimbo, a Software as a Service for physicians . In the past year, with the help and coordination of the marketing 
+                and sales team, we increased sales x20 times and made it from red numbers to green numbers. 
+                <br>    
+                <br>
+                I´ve also worked with another great SaaS company, SkyDrop - a logistics enterprise. With them I worked as a Customer Success Manager to keep customers happy, 
+                with Sales to increase the effectivnes and traction of deals, as a Project Manager for an App, and as an Acquisition Expert for Human Resources. 
+                <br>    
+                I also started a small e-commerce site, PawBasket , to deliver a unique experience for new owners of puppies. The objective of PawBasket was to deliver baskets 
+                with all the necessary items to raise a puppy in it´s most important stages.
+            </p>
+
         </div>
 
     </section>
@@ -89,10 +145,6 @@
 
                 <nav class="navbar navbar-light bg-light justify-content-between" style="position: fixed; bottom: 0%; right: 0%; left: 0%;">
                         <a class="navbar-brand">Copyright @</a>
-                        <form class="form-inline">
-                          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
                       </nav>
             </div>
     
