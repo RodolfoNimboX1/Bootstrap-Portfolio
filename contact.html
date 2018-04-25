@@ -28,6 +28,13 @@
          }
                                            }
 
+
+     @media screen and (max-width: 991px) {
+        #navbarDropdownMenuLink {
+         display: none;
+     }
+                                     }
+
 /* Height Responsive */
 
         @media screen and (max-height: 650px) {
@@ -58,7 +65,7 @@
                 
         <div class="col">
             <!--Nav Bar-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: white; position: fixed; top:0%; right: 0%; left: 0%;">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: white; position: fixed; top:0%; right: 0%; left: 0%; z-index: 10;">
 
                 <!--Logo-->
                     <a style="background: teal; color: white; margin-left: 50px;"> 
@@ -72,7 +79,7 @@
                     </button>
 
                  <!--Menu-->         
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown" style="margin-left: 250px;">
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown" style="margin-left: 250px; z-index: 10;">
 
                                 <ul class="navbar-nav" style="margin-left: 300px;">
                                   <li class="nav-item">
