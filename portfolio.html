@@ -15,6 +15,7 @@
             background-image: url(assets/images/darkness.png);
         }
 
+/* Width Responsive */
        @media screen and (max-width: 1400px) {
 
            h1 {
@@ -27,6 +28,8 @@
 
         @media screen and (max-width: 1100px) {
             .blog {
+                position: relative;
+                top: 50%;
                 height: 200px;
                 width: 400px;
             }
@@ -35,19 +38,47 @@
         
         @media screen and (max-width: 900px) {
             .blog {
+                margin-top: 10%;
+                margin-right: 40%;
+                margin-bottom:20%; 
                 height: 200px;
                 width: 300px;
+                float: none;
             }
         }  
 
         @media screen and (max-width: 700px) {
             .blog {
+                margin-top: 10%;
+                margin-right: 0%;
                 height: 200px;
                 width: 300px;
                 float: none;
             }
         }                                              
 
+/* Height Responsive */
+
+        @media screen and (max-height: 650px) {
+            .col-12 {
+                overflow: scroll;
+            }
+            .image1 {
+                display: none;
+            }
+        }
+
+        @media screen and (max-height: 300px) {
+            .col-12 {
+                margin-top: 5%;
+            }
+            .blog {
+                display: none;
+            }
+            iframe {
+                display: none;
+            }
+        }
 
 </style>
 
@@ -115,19 +146,33 @@
       <h2 style="color: teal; padding-top: 20px;"> Portfolio </h2>
       <hr>
 
+
+<div class="container">
+
       <div class="embed-responsive embed-responsive-16by9" style="float: left; overflow: scroll; width: 40%; height: 400xp;">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qv9lq7c338U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
                 </iframe>
       </div>
 
-      <a class="btn btn-primary" href="https://www.youtube.com/playlist?list=PLHHeE3YfVryazyVCiGUbbmyW3_u3dEJIE" target="_blank" role="button">Visit the Channel</a>
-
-      <div class="blog" style="float: right; height: 400xp; overflow: scroll;">
-                <a href="https://blog.nimbo-x.com/c%C3%B3mo-usar-el-m%C3%B3dulo-de-cargos-de-nimbo-x-2bde1bd27397" target="_blank"><img src="assets/images/cargos_post.png" alt="Cómo usar el Módulo de Cargos de Nimbo X" style="width: 500px; height: 300px;">
-                </a>
+      <div style="display: flex; justify-content: center; width: 20%; position: absolute; bottom: 10%; right: 70%;">
+        <a class="btn btn-primary" href="https://www.youtube.com/playlist?list=PLHHeE3YfVryazyVCiGUbbmyW3_u3dEJIE" target="_blank" role="button">
+            Visit the Channel
+        </a>
       </div>
 
-      <a class="btn btn-primary" href="https://blog.nimbo-x.com/" target="_blank" role="button">Visit the Blog</a>
+</div>      
+
+<div class="container">
+
+      <div class="blog" style="float: right; height: 400xp; overflow: scroll;">
+                    <img src="assets/images/cargos_post.png" alt="Cómo usar el Módulo de Cargos de Nimbo X" style="width: 500px; height: 300px;">
+      </div>
+
+      <div style="display: flex; justify-content: center; position: absolute; bottom: 10%; left: 70%;">  
+        <a class="btn btn-primary" href="https://blog.nimbo-x.com/" target="_blank" role="button">
+            Visit the Blog
+        </a>
+    </div> 
 
   </div>
     

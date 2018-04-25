@@ -16,6 +16,7 @@
           background-image: url(assets/images/darkness.png);
       }
 
+/* Width Responsive */
      @media screen and (max-width: 1400px) {
 
          h1 {
@@ -26,6 +27,23 @@
              height: 50%;
          }
                                            }
+
+/* Height Responsive */
+
+        @media screen and (max-height: 650px) {
+            .col-12 {
+                overflow: scroll;
+            }
+            .image1 {
+                display: none;
+            }
+        }
+
+        @media screen and (max-height: 300px) {
+            .col-12 {
+                margin-top: 5%;
+            }
+        }
 
 </style>
 
